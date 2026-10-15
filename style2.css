@@ -1,0 +1,349 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+
+    /* GIF BACKGROUND */
+    background-image: url("https://i.postimg.cc/Hx4nDVh0/mountain-snow.gif");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+.yummy {
+    position: relative;
+
+    width: 100%;
+    height: 700px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.apple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+
+    top: 20px;
+    left: 50px;
+    right: 50px;
+
+    z-index: 3;
+}
+
+
+/* Logo */
+
+.apple img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+}
+
+
+/* Navigation links */
+
+.apple a {
+    margin: 0 20px;
+
+    font-size: 35px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+
+/* Hover */
+
+.apple a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.burger {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Main hero image */
+
+.burger img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    /* Make image slightly transparent
+       so GIF background can be seen */
+    opacity: 0.65;
+}
+
+
+/* =========================
+   DARK OVERLAY
+========================= */
+
+.yummy::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 20, 40, 0.3);
+
+    z-index: 1;
+}
+
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.coca {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    /* Center everything */
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    z-index: 2;
+}
+
+
+/* Hero title */
+
+.coca h1 {
+    font-size: 70px;
+
+    margin: 0 0 30px;
+
+    text-shadow:
+        0 0 15px cyan,
+        0 0 30px cyan;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    color: white;
+
+    font-size: 35px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 15px 30px;
+
+    background: linear-gradient(
+        to right,
+        lightblue,
+        cyan
+    );
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+button:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 10px 10px white;
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+h2 {
+    font-size: 70px;
+
+    text-shadow:
+        0 0 15px cyan;
+
+    color: white;
+}
+
+
+/* =========================
+   CLIMATE SECTION
+========================= */
+
+.chicken {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 80px 20px;
+
+    /* Slight transparent background */
+    background: rgba(0, 20, 40, 0.35);
+}
+
+
+/* Climate image */
+
+.chicken img {
+    max-width: 90%;
+
+    box-shadow:
+        0 0 100px #86BCBD;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   ANIMALS SECTION
+========================= */
+
+.icecream {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 80px 20px;
+
+    background: rgba(0, 20, 40, 0.35);
+}
+
+
+/* =========================
+   ANIMAL CARD
+========================= */
+
+.udon {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: min(900px, 90%);
+    background: linear-gradient(
+        to right,
+        #b4ffe8,
+        #3874FF
+    );
+
+    padding: 50px;
+
+    border-radius: 20px;
+}
+
+
+/* Animal image */
+
+.udon img {
+    width: 65%;
+
+    height: 65%;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 0 100px cyan;
+
+    border-radius: 100px;
+
+    transition: 0.5s;
+}
+
+
+/* Image hover */
+
+.udon img:hover {
+    transform: translateY(-10px);
+}
+
+
+/* =========================
+   ANIMAL NAME
+========================= */
+
+h3 {
+    text-shadow:
+        0 0 15px #2196F3;
+
+    color: white;
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ANIMAL INFORMATION
+========================= */
+
+ul {
+    font-size: 25px;
+
+    color: #5A4636;
+
+    font-family: cursive;
+
+    line-height: 1.6;
+
+    max-width: 800px;
+}
